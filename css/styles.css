@@ -428,6 +428,7 @@ header > .header-container {
   height: 100%;
   justify-content: center;
   align-items: center;
+  color:#afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -435,14 +436,15 @@ header > .header-container {
 }
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--hover-color);
+  border-color:var(--hover-color);
+  color: var(--hover-color);
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--hover-color);
 }
 .clients-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .clients-list {
   display: flex;
@@ -494,7 +496,6 @@ header > .header-container {
   line-height: 1.71;
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   color: var(--second-text-color);
 }
 .contacts-link-mail-footer,
@@ -549,6 +550,7 @@ header > .header-container {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   gap: 10px;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .footer-social-links-icon:hover,
 .footer-social-links-icon:focus {
@@ -615,6 +617,8 @@ header > .header-container {
 }
 .projects-link {
   display: block;
+  background-color: var(--main-bg-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-link:hover,
 .projects-link:focus {
